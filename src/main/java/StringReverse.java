@@ -1,3 +1,4 @@
+import java.lang.*;
 
 public class StringReverse {
     /**
@@ -13,6 +14,12 @@ public class StringReverse {
      * @return the reverse of str.
      */
     public String reverse(String str){
-        return null;
+        String reversedString = "";
+        // Set index i initial value to the last index of the string, then decrement at each iteration.
+        for(int i = (str.length() - 1); i >= 0; i--) {
+            reversedString += str.charAt(i); // Add string 'str' from back to front, one character at a time.
+        }
+
+        return reversedString;
     }
 }
